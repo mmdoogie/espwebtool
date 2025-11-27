@@ -3,6 +3,9 @@ A web app to flash your ESP32 or ESP8266 through your browser. Open-Source, free
 
 Have a look [serial.huhn.me](https://esptool.spacehuhn.com)
 
+## DC256 BLE CTF
+This version customized to prepopulate files needed to flash the DC256 BLE CTF.
+
 ## Credits
 Based on [ESP Web Flasher](https://github.com/NabuCasa/esp-web-flasher)  
 And inspired by [esptool-js](https://github.com/espressif/esptool-js).

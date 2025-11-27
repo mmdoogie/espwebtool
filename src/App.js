@@ -170,13 +170,19 @@ const App = () => {
     }
 
     for (const file of uploads) {
-      if (!file.fileName || !file.obj) continue
+      if (!file.fileName || !(file.obj || file.url)) continue
       success = true
 
       toast(`Uploading ${file.fileName.substring(0, 28)}...`, { position: 'top-center', progress: 0, toastId: 'upload' })
 
       try {
-        const contents = await toArrayBuffer(file.obj)
+            var contents
+        if (file.obj) {
+            contents = await toArrayBuffer(file.obj)
+        } else {
+            const resp = await fetch(file.url)
+            contents = await resp.arrayBuffer()
+        }
 
         await espStub.flashData(
           contents,

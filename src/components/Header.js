@@ -30,7 +30,7 @@ const Header = (props) => {
                         fontFamily: 'Bungee',
                     }}
                 >
-                    &nbsp;&nbsp;ESPWebTool
+                    &nbsp;&nbsp;ESPWebTool for DC256 BLE CTF
                 </Typography>
 
                 <Button

@@ -17,6 +17,11 @@ const Footer = (props) => {
                 display='block'>
                 Made with ❤️ by <Link href='https://spacehuhn.com' target='_blank' underline='hover' color='inherit'>Spacehuhn</Link>
                 </Typography>
+                <Typography
+                align='center'
+                display='block'>
+                Customized by <Link href='https://github.com/mmdoogie' target='_blank' underline='hover' color='inherit'>Doogie</Link> for DC256 BLE CTF
+                </Typography>
             </Box>
 
             { /* Version */}

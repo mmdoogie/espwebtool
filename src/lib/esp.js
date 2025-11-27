@@ -21,10 +21,9 @@ const defaultFiles = (chipName) => {
 
     if (chipName.includes('ESP32')) {
         return [
-            { offset: '1000' },
-            { offset: '8000' },
-            { offset: 'E000' },
-            { offset: '10000' }
+            { offset: '1000', fileName: 'blectf/bootloader.bin', url: 'blectf/bootloader.bin' },
+            { offset: '8000', fileName: 'blectf/partition-table.bin', url: 'blectf/partition-table.bin' },
+            { offset: '10000', fileName: 'blectf/firmware.bin', url: 'blectf/firmware.bin' }
         ]
     } else {
         return [
